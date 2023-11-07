@@ -1,5 +1,5 @@
-//Implemente um programa que solicite do usuário números inteiros e verifique quantos números são pares 
-//e quantos são ímpares. Além disto, deve ser exibido a média aritm��ica de n�meros pares e impares. 
+//Implemente um programa que solicite do usuÃ¡rio nÃºmeros inteiros e verifique quantos nÃºmeros sÃ£o pares 
+//e quantos sÃ£o Ã­mpares. AlÃ©m disto, deve ser exibido a mÃ©dia aritmÃéica de números pares e impares. 
 //Deve-se interromper a leitura dos dados quando for digitado um valor negativo.
 
 #include <stdio.h>
@@ -12,7 +12,7 @@ int main()
 {
     setlocale(LC_ALL, "portuguese");
 
-    //Definindo Vari�veis
+    //Definindo Variáveis
     int i = 1;
     int pares = 0;
     int impares = 0;
@@ -25,10 +25,10 @@ int main()
     //Solicitando dados
         do
         {
-        printf("Informe o %i� valor: ", i);
+        printf("Informe o %i° valor: ", i);
         scanf("%i", &valor);
 
-        if (valor > 0)
+        if (valor >= 0)
         {
         if (valor %2 == 0)
         {
@@ -50,10 +50,10 @@ int main()
         mediaImpares =  somaimpares / impares;
 
 
-printf("Quantidade de n�meros pares: %i \n", pares);
-printf("Quantidade de n�meros impares: %i \n", impares);
-printf("M�dia de n�meros pares: %i \n", mediaPares);
-printf("M�dia de n�meros impares: %i ", mediaImpares);
+printf("Quantidade de números pares: %i \n", pares);
+printf("Quantidade de números impares: %i \n", impares);
+printf("Média de números pares: %i \n", mediaPares);
+printf("Média de números impares: %i ", mediaImpares);
 
 
 
